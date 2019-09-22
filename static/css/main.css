@@ -1,0 +1,37 @@
+html, body{
+
+    font-family: sans-serif;
+    background-color: honeydew;
+
+}
+
+.topBar{
+    background-color: darkgreen;
+    margin: 0;
+    text-align: center;
+}
+.container{
+    color: black;
+    margin: 0;
+    background-color: forestgreen;
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+.container0{
+    background-color: mediumseagreen;
+    font-family:Snell Roundhand, cursive;
+    text-align: center;
+}
+
+.Button{
+    color: darkgoldenrod;
+    border-width: 4px;
+    border-color: black;
+    font-weight: bold;
+
+}
+
+.buttons{
+    text-align: match-parent;
+}

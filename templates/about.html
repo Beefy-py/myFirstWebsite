@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+{% block con %}
+    <div class="topBar">
+        <h1>About Page</h1>
+        <div class="buttons">
+            <form action="{{url_for('home')}}">
+                <button class="Button">Home</button>
+            </form>
+            <form action="{{ url_for('projects')}}">
+                <button class="Button">Projects</button>
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Hello, i am Kenny Hoft</h4>
+        <p>I am currently learning the computer language: <a href="https://www.python.org"><b>Python</b></a>
+            <br>I'd say i have already mastered the beginner stuff like <em>Lists, Dictionaries, Strings, Variables, Functions</em> and all the other stuff
+            <br>I have not yet mastered python's Classes(OOP) ,But i will in time
+        </p>
+        <p>If you want you can challenge me on <a href="https://www.sololearn.com/Profile/14408475/Python">SoloLearn</a>.
+            <br>I'd like a challenge
+        </p>
+        <p>To contact me, go to my <a href="https://discord.gg/fNkRnM"><b>Discord</b></a>  server or you can join me with my other Python friends <a href="https://discord.gg/wZ4XHQ"><b>on this Discord server</b></a>.
+            <br>Subscribe to me on <a href="https://www.youtube.com/channel/UCQKw6eMvGcsKiCQ02eGXl3g?view_as=subscriber">Youtube</a> and if you want to play Game with me, just join my <a href="https://discord.gg/fNkRnM">Discord</a>
+        </p>
+    </div>
+    <div class="container0">
+        <p>
+            I will add more content in the future<br>
+            So more to come
+        </p>
+    </div>
+
+{% endblock con %}
