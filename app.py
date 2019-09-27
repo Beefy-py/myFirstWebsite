@@ -20,7 +20,7 @@ def projects():
 
 @s_app.route('/plot_country_data_2019')
 def plot_country_data_2019():
-    from bokeh.plotting import show, figure, output_file, ColumnDataSource
+    from bokeh.plotting import figure, output_file, ColumnDataSource
     from bokeh.models.tools import HoverTool
     from bokeh.transform import factor_cmap
     from bokeh.palettes import Viridis256
@@ -31,13 +31,11 @@ def plot_country_data_2019():
 
     dataF = pd.read_csv('CountriesPopulation_2019.csv')
 
-    #output_file('population_2019.html')
+    output_file('population_2019.html')
 
     data_source = ColumnDataSource(dataF)
 
     countries_list = list(data_source.data['Country'])
-
-    output_file('population_2019.html')
 
     fig = figure(y_range=countries_list,
                  plot_height=700,
@@ -70,12 +68,10 @@ def plot_country_data_2019():
 
     fig.add_tools(hover)
 
-    #show(fig)
-
     script, div = components(fig)
 
     cdn_js = CDN.js_files[0]
-    cdn_css = 'https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js'
+    cdn_css = 'https://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css'
 
     return render_template('country_data2019_plot.html',
                            script=script,

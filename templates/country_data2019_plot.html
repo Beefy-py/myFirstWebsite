@@ -6,6 +6,10 @@
 
 {% block con%}
 
+    <form action="{{ url_for('projects')}}">
+        <button class="Button">Projects</button>
+    </form>
+
     <div class="container0">
         <p>This is a Bokeh Plot i made using a bit of data i scraped from <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)">Wikipedia</a>
             <br>It is the population of 229 countries of 2019.
