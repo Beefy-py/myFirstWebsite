@@ -86,3 +86,4 @@ def plot_country_data_2019():
 
 if __name__ == "__main__":
     s_app.run(debug=True)
+
