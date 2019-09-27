@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block brn%}
+    <link rel="stylesheet" href={{cdn_css | safe}} type="text/css" />
+{% endblock brn%}
+
+{% block con%}
+
+    <div class="container0">
+        <p>This is a Bokeh Plot i made using a bit of data i scraped from <a href="https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)">Wikipedia</a>
+            <br>It is the population of 229 countries of 2019.
+        </p>
+        <p><em>As you hover the cursor in the area of the countries,
+        you can see a bit more info about them.
+            <br> The bars of the countries with the least population are a so thin so you might want to zoom in a lot and then hover over it to see the info.
+        <br>There are tools to the right of the plot, the zoom tool is one of them</em>
+        </p>
+    </div>
+
+
+    <script type="text/javascript" src={{cdn_js | safe}}></script>
+
+    {{ script | safe}}
+    {{ div | safe}}
+
+{% endblock con%}
