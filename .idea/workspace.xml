@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24cf56b5-cbb8-4447-a6c8-6f4f4a7b1699" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/country_data2019_plot.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/country_data2019_plot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,11 +96,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.app" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -114,6 +109,7 @@
       <updated>1569105332855</updated>
       <workItem from="1569105815950" duration="2583000" />
       <workItem from="1569150321255" duration="6174000" />
+      <workItem from="1569694758038" duration="305000" />
     </task>
     <servers />
   </component>
