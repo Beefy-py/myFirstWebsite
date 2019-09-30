@@ -1,16 +1,12 @@
 {% extends "layout.html" %}
 {% block con %}
-    <div class="topBar">
+
+    <nav>
         <h1>About Page</h1>
-        <div class="buttons">
-            <form action="{{url_for('home')}}">
-                <button class="Button">Home</button>
-            </form>
-            <form action="{{ url_for('projects')}}">
-                <button class="Button">Projects</button>
-            </form>
-        </div>
-    </div>
+        <a href="{{url_for('projects')}}">Projects</a>
+        <a href="{{url_for('home')}}">Home</a>
+    </nav>
+
     <div class="container_p">
         <h4>Hello, i am Kenny </h4>
         <p>I am currently learning the computer language: <a target="_blank" href="https://www.python.org"><b>Python</b></a>

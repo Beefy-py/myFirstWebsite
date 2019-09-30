@@ -6,9 +6,9 @@
 
 {% block con%}
 
-    <form action="{{ url_for('projects')}}">
-        <button class="Button">Projects</button>
-    </form>
+     <nav>
+        <a href="{{url_for('projects')}}">Projects</a>
+    </nav>
 
     <div class="container_p">
         <p>This is a Bokeh Plot i made using a bit of data i scraped from <a target="_blank" href="https://en.wikipedia.org/wiki/List_of_countries_by_population_(United_Nations)">Wikipedia</a>

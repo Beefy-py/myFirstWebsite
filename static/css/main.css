@@ -1,15 +1,16 @@
+header{
+    background-color: forestgreen;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
 html, body{
 
     font-family: sans-serif;
-    background-color: burlywood;
+    background-color: #696969;
 
 }
 
-.topBar{
-    background-color: darkgreen;
-    margin: 0;
-    text-align: center;
-}
 .container_p{
     color: black;
     margin: 0;
@@ -25,12 +26,26 @@ html, body{
     text-align: center;
 }
 
-.Button{
-    color: darkgoldenrod;
-    border-width: 4px;
-    border-color: black;
+nav a{
+    color: black;
+    padding: 14px 25px;
+    background-color: lightgreen;
     font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
 
+.project{
+    color: black;
+    padding: 14px 25px;
+    background-color: olivedrab;
+    font-weight: 800;
+    display: inline-block;
+}
+
+nav{
+    text-align: center;
+    background-color: darkgreen;
 }
 
 .buttons{

@@ -1,17 +1,13 @@
 {% extends "layout.html" %}
 
 {% block con%}
-    <div class="topBar">
-        <h1>The home page</h1>
-        <div class="buttons">
-            <form  action="{{url_for('about')}}">
-                <button class="Button">About</button>
-            </form>
-            <form action="{{ url_for('projects')}}">
-                <button class="Button">Projects</button>
-            </form>
-        </div>
-    </div>
+
+    <nav>
+        <h1>Home page</h1>
+        <a href="{{url_for('about')}}">About</a>
+        <a href="{{url_for('projects')}}">Projects</a>
+    </nav>
+
     <div class="container0">
         <h1>!Home Page Still Under Development</h1>
     </div>
