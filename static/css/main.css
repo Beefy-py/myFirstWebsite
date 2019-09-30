@@ -26,13 +26,31 @@ html, body{
     text-align: center;
 }
 
-nav a{
+nav a:link{
     color: black;
     padding: 14px 25px;
     background-color: lightgreen;
     font-weight: bold;
     display: inline-block;
     text-decoration: none;
+}
+
+nav a:visited{
+    color: gray;
+    padding: 14px 25px;
+    background-color: lightgreen;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: white;
+    padding: 18px 30px;
+    background-color: lightgreen;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: underline;
 }
 
 .project{
