@@ -1,16 +1,20 @@
 {% extends "layout.html" %}
 {% block con %}
 
-    <nav>
-        <h1>About Page</h1>
+    <h1>About Page</h1>
+    <nav class="topnav" id="myTopnav">
+        <a href="{{url_for('home')}}" >Home</a>
+        <a href="{{url_for('about')}}" class="active">About</a>
         <a href="{{url_for('projects')}}">Projects</a>
-        <a href="{{url_for('home')}}">Home</a>
-    </nav>
 
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+
+    </nav>
     <div class="container_p">
         <h4>Hello, i am Kenny </h4>
         <p>I am currently learning the computer language: <a target="_blank" href="https://www.python.org"><b>Python</b></a>
-            <br>I'd have mastered all the beginner stuff of python and i think i can pretty much call myself a Junior Developer
+            <br>I have been programming in Python since March 2019 and i've mastered all the beginner stuff of python and i think i can pretty much call myself a Junior Developer
         </p>
         <p>If you want you can challenge me on <a target="_blank" href="https://www.sololearn.com/Profile/14408475/Python">SoloLearn</a>.
             <br>I'd like a challenge
