@@ -80,6 +80,11 @@ def plot_country_data_2019():
                            cdn_js=cdn_js)
 
 
+@s_app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
 if __name__ == "__main__":
     s_app.run(debug=True)
 

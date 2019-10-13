@@ -31,6 +31,7 @@ html, body {
     text-align: center;
     font-family: calibri, sans-serif;
     font-size: 20px;
+    background-color: darkcyan
 }
 
 .container0{
@@ -71,6 +72,7 @@ nav a:hover{
     display: block;
 }
 
+/*
 .project0{
     color: blue;
     margin-top: 30px;
@@ -82,7 +84,7 @@ nav a:hover{
     background-color: cadetblue;
     display: block;
 }
-
+*/
 
 
 nav{
@@ -98,6 +100,7 @@ nav{
 .topnav {
   background-color: #333;
   overflow: hidden;
+    
 }
 
 /* Style the links inside the navigation bar */
@@ -144,4 +147,120 @@ nav{
     display: block;
     text-align: left;
   }
+}
+
+/* Dop down for skills menu in about page */
+.dropbtn-skills {
+  background-color: darkblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-skills {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-skills {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content-skills a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-skills a:hover {background-color: #f1f1f1}
+
+.dropdown-skills:hover .dropdown-content-skills {
+  display: block;
+}
+
+.dropdown-skills:hover .dropbtn-skills {
+  background-color: #3e8e41;
+}
+
+/* Dop down for pictures menu in about page */
+.dropbtn-pic {
+  background-color: darkgoldenrod;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-pic {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content-pic {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content-pic span {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content-pic a:hover {background-color: #f1f1f1}
+
+.dropdown-pic:hover .dropdown-content-pic {
+  display: block;
+}
+
+.dropdown-pic:hover .dropbtn-pic {
+  background-color: #3e8e41;
+}
+
+
+.el-credit{
+    font-size: 11px
+}
+/*Drop down for picture in Pictures menu*/
+.dropdownpicture1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownpicture1-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownpicture1:hover .dropdownpicture1-content {
+  display: block;
+}
+
+.descpicture1 {
+  padding: 15px;
+  text-align: center;
+    color: black
+}
+
+.descpicture1 a{
+  text-align: center;
+    color: black
 }

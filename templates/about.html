@@ -3,9 +3,11 @@
 
     <h1>About Page</h1>
     <nav class="topnav" id="myTopnav">
-        <a href="{{url_for('home')}}" >Home</a>
+
+        <a href="{{url_for('home')}}">Home</a>
         <a href="{{url_for('about')}}" class="active">About</a>
         <a href="{{url_for('projects')}}">Projects</a>
+        <a href="{{url_for('contact')}}">Contact Me</a>
 
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i></a>
@@ -20,14 +22,41 @@
             <br>I'd like a challenge
         </p>
         <p>To contact me, go to my <a target="_blank" href="https://discord.gg/CUdNqWT"><b>Discord</b></a>  server.
-            <br>Subscribe to me on <a target="_blank" href="https://www.youtube.com/channel/UCQKw6eMvGcsKiCQ02eGXl3g?view_as=subscriber">Youtube</a> and if you want to play Game with me, just join my <a target="_blank" href="https://discord.gg/CUdNqWT">Discord</a>
+            <br>Subscribe to me on <a target="_blank" href="https://www.youtube.com/channel/UCQKw6eMvGcsKiCQ02eGXl3g?view_as=subscriber">Youtube</a> and if you want to play video games with me, just join my <a target="_blank" href="https://discord.gg/CUdNqWT">Discord</a>
         </p>
     </div>
-    <div class="container0">
-        <p>
-            I will add more content in the future<br>
-            .......
-        </p>
+
+    <div class="dropdown-skills">
+      <button class="dropbtn-skills">Skills</button>
+      <div class="dropdown-content-skills">
+          <a href="#">Python</a>
+          <a href="#">HTML</a>
+          <a href="#">CSS</a>
+      </div>
     </div>
+
+    <div class="dropdown-pic">
+      <button class="dropbtn-pic">Pictures</button>
+      <div class="dropdown-content-pic">
+          <!--Cactus photo-->
+           <div class="dropdownpicture1">
+              <span>plant</span>
+              <div class="dropdownpicture1-content">
+                  <img src="static\css\elviras1.jpg" alt="Cinque Terre" width="300" height="200">
+                  <div class="descpicture1"><a href="https://en.wikipedia.org/wiki/Cereus_(plant)" target="_blank">Cereus plant</a> in <a target="_blank" href="https://en.wikipedia.org/wiki/Suriname">Suriname</a> rain forest<br><sub class="el-credit"> photo made by my sister</sub></div>
+              </div>
+          </div>
+          <!--Rocks and Nature photo-->
+           <div class="dropdownpicture1">
+              <span>waterfall</span>
+              <div class="dropdownpicture1-content">
+                  <img src="static\css\elviras.jpg" alt="Cinque Terre" width="300" height="200">
+                  <div class="descpicture1">raleighvallen in <a target="_blank" href="https://en.wikipedia.org/wiki/Suriname">Suriname</a> rain forest <br><sub class="el-credit">photo made by my sister</sub></div>
+              </div>
+            </div>
+          <!--VOLGENDE FOTO?-->
+      </div>
+    </div>
+
 
 {% endblock con %}
