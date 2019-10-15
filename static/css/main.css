@@ -238,7 +238,7 @@ nav{
 .el-credit{
     font-size: 11px
 }
-/*Drop down for picture in Pictures menu*/
+/*Drop down for picture1 in Pictures menu*/
 .dropdownpicture1 {
   position: relative;
   display: inline-block;
@@ -267,3 +267,37 @@ nav{
   text-align: center;
     color: black
 }
+
+
+
+/*Drop down for picture2 in Pictures menu*/
+
+.dropdownpicture2 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownpicture2-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdownpicture2:hover .dropdownpicture2-content {
+  display: block;
+}
+
+.descpicture2 {
+  padding: 15px;
+  text-align: center;
+    color: black
+}
+
+.descpicture2 a{
+  text-align: center;
+    color: black
+}
+
