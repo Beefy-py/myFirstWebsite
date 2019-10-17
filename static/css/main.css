@@ -5,7 +5,7 @@ a{
 }
 
 #pr_button{
-    
+
     float: left;
     padding:10px 16px;
     background-color: cadetblue;
@@ -65,7 +65,7 @@ nav a:hover{
     margin-top: 30px;
     font-weight: 800;
     display: inline-block;
-     
+
     float: left;
     padding:10px 16px;
     background-color: cadetblue;
@@ -78,7 +78,7 @@ nav a:hover{
     margin-top: 30px;
     font-weight: 800;
     display: inline-block;
-     
+
     float: left;
     padding:10px 16px;
     background-color: cadetblue;
@@ -100,7 +100,7 @@ nav{
 .topnav {
   background-color: #333;
   overflow: hidden;
-    
+
 }
 
 /* Style the links inside the navigation bar */
@@ -193,6 +193,12 @@ nav{
   background-color: #3e8e41;
 }
 
+
+
+
+
+
+
 /* Dop down for pictures menu in about page */
 .dropbtn-pic {
   background-color: darkgoldenrod;
@@ -208,13 +214,13 @@ nav{
   display: inline-block;
 }
 
-.dropdown-content-pic {
+.dropdown-content-pic{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
+  z-index: 1;
 }
 
 .dropdown-content-pic span {
@@ -235,47 +241,26 @@ nav{
 }
 
 
+
+
+
+/* Elviras credit style*/
 .el-credit{
     font-size: 11px
 }
-/*Drop down for picture1 in Pictures menu*/
-.dropdownpicture1 {
-  position: relative;
-  display: inline-block;
-}
 
-.dropdownpicture1-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
 
-.dropdownpicture1:hover .dropdownpicture1-content {
-  display: block;
-}
 
-.descpicture1 {
-  padding: 15px;
-  text-align: center;
-    color: black
-}
-
-.descpicture1 a{
-  text-align: center;
-    color: black
-}
 
 
 
 /*Drop down for picture2 in Pictures menu*/
-
 .dropdownpicture2 {
   position: relative;
-  display: inline-block;
+  display: block;
+
 }
+
 
 .dropdownpicture2-content {
   display: none;
@@ -283,11 +268,18 @@ nav{
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 2;
+  z-index: 1;
+
+
 }
 
 .dropdownpicture2:hover .dropdownpicture2-content {
   display: block;
+    border-radius: 1vw;
+    margin-left: 9vw;
+    margin-right: 10vw;
+    margin-top: -15vw
+
 }
 
 .descpicture2 {
@@ -300,4 +292,3 @@ nav{
   text-align: center;
     color: black
 }
-
