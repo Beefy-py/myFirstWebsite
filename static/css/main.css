@@ -12,6 +12,10 @@ a{
     display: block;
 }
 
+ .SP_link,  #spes_link, #spes_link0,  #spes_link1,  #spes_link2,  #spes_link3,  #spes_link4{
+   color: blue
+ }
+
 html, body {
 
     background: url("greenBG.jpg") no-repeat center center fixed;
