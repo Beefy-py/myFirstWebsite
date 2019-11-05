@@ -46,6 +46,65 @@ html, body {
     color: white;
 }
 
+
+.user-to-me-form{
+  background-color: darkcyan;
+
+}
+
+
+#form_fields_name{
+
+  width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid darkgreen;
+    border-radius: 4px;
+  }
+#form_fields_title{
+  width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid darkblue;
+    border-radius: 4px;
+
+}
+
+#message_field{
+
+  width: 80%;
+ height: 150px;
+ padding: 12px 20px;
+ box-sizing: border-box;
+ border: 2px solid #ccc;
+ border-radius: 4px;
+ background-color: #f8f8f8;
+ font-size: 16px;
+ resize: none;
+}
+
+.send-btn{
+  color: green;
+  border-width: 0.2vw;
+  border-color: darkgoldenrod;
+  border-radius: 20px;
+  text-decoration-color: dashed;
+  font-size: 1.5vw;
+  font-weight: bolder;
+
+}
+
+.text-container{
+  border-style: dashed;
+  border-radius: 0.7vw;
+  border-width:medium;
+  background-color: #2874A6;
+  border-color: aliceblue;
+  padding: 1.5vw;
+
+}
 nav a:link{
     font-weight: bold;
     display: inline-block;

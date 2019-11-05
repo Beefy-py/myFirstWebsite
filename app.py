@@ -1,7 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for
+from forms import ContactForm
+from flask_mail import Mail, Message
 
 s_app = Flask(__name__)
-
+s_app.config['SECRET_KEY'] = 'Kenny,this is your secret key!'
 
 @s_app.route('/')
 def home():
@@ -80,11 +82,28 @@ def plot_country_data_2019():
                            cdn_js=cdn_js)
 
 
-@s_app.route('/contact')
+@s_app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    form = ContactForm()
+
+    s_app.config['MAIL_SERVER'] = 'smtp.gmail.com'
+    s_app.config['MAIL_PORT'] = 465
+    s_app.config['MAIL_USE_SSL'] = True
+    s_app.config['MAIL_DEBUG'] = True
+    s_app.config['MAIL_USERNAME'] = 'testkenny00@gmail.com'
+    s_app.config['MAIL_PASSWORD'] = 'TESTING2004'
+    s_app.config['MAIL_MAX_EMAILS'] = 3
+
+    mail = Mail(s_app)
+    if form.validate_on_submit():
+        msg = Message(f"{form.title.data} from {form.name.data} from Kenny's web app",
+                      sender=(form.name.data, 'testkenny00@gmail.com'),
+                      recipients=['hoftkenny2@gmail.com'])
+        msg.body = form.message.data
+        mail.send(msg)
+        return redirect(url_for('home'))
+    return render_template('contact.html', form=form)
 
 
 if __name__ == "__main__":
     s_app.run(debug=True)
-

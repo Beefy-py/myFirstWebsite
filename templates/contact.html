@@ -12,8 +12,19 @@
     </nav>
 
     <div class="container0">
-        <h1>!Contact page still under development</h1>
-    </div>
+        <form action="" method="POST" class="user-to-me-form">
+            {{ form.csrf_token }}
+            {{ form.name.label(id='form_labels_name') }}<br>
+            {{ form.name(id="form_fields_name")}}<br>
 
+            {{form.title.label(id='form_labels_title')}}<br>
+            {{form.title(id="form_fields_title")}}<br>
+
+            {{ form.message.label(id='message_label')}}<br>
+            {{ form.message(id='message_field')}}<br>
+
+            <input class='send-btn' type="submit" value="Send">
+        </form>
+    </div>
 
 {% endblock con%}
