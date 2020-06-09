@@ -90,15 +90,15 @@ def contact():
     s_app.config['MAIL_PORT'] = 465
     s_app.config['MAIL_USE_SSL'] = True
     s_app.config['MAIL_DEBUG'] = True
-    s_app.config['MAIL_USERNAME'] = 'testkenny00@gmail.com'
-    s_app.config['MAIL_PASSWORD'] = 'TEST20040044'
+    s_app.config['MAIL_USERNAME'] = '******************'
+    s_app.config['MAIL_PASSWORD'] = '*********'
     s_app.config['MAIL_MAX_EMAILS'] = 3
 
     mail = Mail(s_app)
     if form.validate_on_submit():
         msg = Message(f"{form.title.data} from {form.name.data} from Kenny's web app",
-                      sender=(form.name.data, 'testkenny00@gmail.com'),
-                      recipients=['hoftkenny2@gmail.com'])
+                      sender=(form.name.data, '*****************'),
+                      recipients=['****************'])
         msg.body = form.message.data
         mail.send(msg)
         return redirect(url_for('home'))
