@@ -91,7 +91,7 @@ def contact():
     s_app.config['MAIL_USE_SSL'] = True
     s_app.config['MAIL_DEBUG'] = True
     s_app.config['MAIL_USERNAME'] = 'testkenny00@gmail.com'
-    s_app.config['MAIL_PASSWORD'] = 'TESTING2004'
+    s_app.config['MAIL_PASSWORD'] = 'TEST20040044'
     s_app.config['MAIL_MAX_EMAILS'] = 3
 
     mail = Mail(s_app)

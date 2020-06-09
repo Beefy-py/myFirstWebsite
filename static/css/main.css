@@ -44,6 +44,9 @@ html, body {
     text-align: center;
     font-size: larger;
     color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 
 
